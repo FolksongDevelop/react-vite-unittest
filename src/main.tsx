@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import '@/assets/css/index.css'
 import App from '@/pages/App'
+import '@/assets/css/index.scss'
 
 /* Ex1 version 18 */
 // const root = ReactDOM.createRoot(

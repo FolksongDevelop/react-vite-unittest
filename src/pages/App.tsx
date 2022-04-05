@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import logo from '@/assets/images/logo.svg'
-import '@/assets/css/App.css'
+// import logo from '@/assets/images/logo.svg'
+import '@/assets/css/App.scss'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,10 +8,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" width="640" height="360" alt="logo" />
+        {/* <img src={logo} className="App-logo" width="640" height="360" alt="logo" /> */}
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
+          <button id="countButton"
+            data-testid="countButton"
+            type="button"
+            onClick={() => setCount((count) => count + 1)}
+          >
             count is: {count}
           </button>
         </p>
